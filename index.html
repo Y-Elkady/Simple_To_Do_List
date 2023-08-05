@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BASEC TODO </title>
+</head>
+<body>
+
+    <section class="main container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 m-auto main">
+                <h1>Add New Task</h1>
+                <input type="text" id="todo" class="form-control mb-4">
+                <button type="button" class="btn btn-success" onclick="add()">Add</button>
+                <h3 class="mt-5">Your Tasks</h3>
+                <div class="display-all-info row mt-3">   
+                     <div class="row info mt-2" >
+                             <h3 id="num"></h3>
+                             <h3 id="tasks"></h3>
+                     </div>
+                     <button class="btn btn-danger remove-all" onclick="removeAll()">remove all tasks</button>
+              </div>
+            </div>
+        </div>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>
